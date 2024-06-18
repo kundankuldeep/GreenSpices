@@ -3,44 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Startup Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website renewd</h1>
+        <div class="container">
+            <a href="#"><img src="assets/logo.png" alt="Startup Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li>
+                        <a href="#" class="social"><img src="assets/Facebook.png" alt="Facebook"></a>
+                        <a href="#" class="social"><img src="assets/Instagram.png" alt="Instagram"></a>
+                        <a href="#" class="social"><img src="assets/LinkedIN.png" alt="LinkedIN"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>About Me</h2>
-        <p>This is a basic HTML template to get you started with your website. Customize it as needed to fit your content and style.</p>
-    </main>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Green Spices</h1>
+            <p>Innovative solutions for your business needs</p>
+            <a href="#products" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Repeat this block for 9 products -->
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/spice-pp.avif" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Short description of Product 1.</p>
+                </div>
+                <!-- End of product block -->
+                <!-- Repeat the product block to fill up 9 products -->
+            </div>
+        </div>
+    </section>
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="feature">
+                <img src="assets/ic-natural.png" alt="Feature 1">
+                <h3>100% Pure and Natural</h3>
+                <p>Short description of why this feature is beneficial.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/ic-no-preservative.png" alt="Feature 2">
+                <h3>No Added Preservatives</h3>
+                <p>Short description of why this feature is beneficial.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/ic-no-colors.png" alt="Feature 3">
+                <h3>No Added Colors</h3>
+                <p>Short description of why this feature is beneficial.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a forward-thinking company dedicated to providing the best solutions for our customers. Our team of experts works tirelessly to bring you the most innovative products in the industry.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:info@startup.com">info@startup.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Startup Lane, Innovation City, Country</p>
+                </div>
+                <div class="contact-form">
+                    <form action="submit_form.php" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0864170342556!2d144.96315771531684!3d-37.814107979751824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d1c7ab0f%3A0x5045675218ce660!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1594836295921!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 My Web Page</p>
+        <div class="container">
+            <p>&copy; 2024 Startup. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
